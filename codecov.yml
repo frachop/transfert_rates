@@ -1,3 +1,4 @@
 ignore:
+  - "/usr/include"
   - "include/catch.hpp"
   - "test/main.cpp"
