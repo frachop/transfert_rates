@@ -8,8 +8,8 @@ before_install:
   - pip install requests
 
 script:
-  - g++ -std=c++11 -o TestBinary -fprofile-arcs -ftest-coverage test/main.cpp
-  - ./TestBinary
-  - gcov -r . -o . test/test_index.cpp
+  - g++ -O0 -g -coverage -fprofile-arcs -ftest-coverage -std=c++11 -o tests test/main.cpp
+  - ./tests
+  - gcov -r . -o . test/main.cpp
   - bash <(curl -s https://codecov.io/bash)
   
