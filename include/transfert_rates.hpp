@@ -3,6 +3,7 @@
 
 // standards includes
 #include <cstdint> // for uint64_t
+#include <utility> // for std::move
 
 //- /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - see https://www.fluentcpp.com/2016/12/08/strong-types-for-strong-interfaces/

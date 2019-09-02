@@ -1,0 +1,8 @@
+language: cpp
+
+compiler:
+  - clang
+
+script:
+  - g++ -std=c++11 -o TestBinary -fprofile-arcs -ftest-coverage test/main.cpp
+  - ./TestBinary
